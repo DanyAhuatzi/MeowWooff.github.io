@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perros en Adopción</title>
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="perros.css"> <!-- Enlace al archivo CSS externo -->
+
+
+</head>
+<!-- ======= HEADER ======= -->
+<link rel="stylesheet" href="header.css">
+
+<header class="navbar">
+    <div class="logo">
+        <img src="logomeow.jpg" alt="Logo">
+        <h1>MeowWoof</h1>
+    </div>
+
+    <nav class="nav-links">
+        <a href="Pagina_principal.php" class="btn-inicio">Inicio</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<!-- ======= SUBMENÚ ======= -->
+<div class="submenu">
+    <a href="perros.html">Perros</a>
+    <a href="gatos.html">Gatos</a>
+    <a href="recomendaciones.html">Recomendaciones</a>
+    <a href="dejar.html">Dejar Mascota</a>
+    <a href="quienes_somos.html">¿Quiénes somos?</a>
+    <a href="dona.html">Dona</a>
+
+</div>
+
+<body>
+  <!-- ======= ENCABEZADO ======= -->
+  <header>
+    <h1>Perros en Adopción</h1>
+  </header>
+
+  <!-- ======= CONTENEDOR PRINCIPAL ======= -->
+  <main class="contenedor">
+
+    <!-- ======= ASIDE: FILTROS ======= -->
+    <aside class="filtros">
+      <h3>Filtrar por:</h3>
+
+      <!-- Filtro por ciudad -->
+      <label>Ciudad o Municipio:</label>
+      <input type="text" placeholder="Ejemplo: Guadalajara" id="filtroCiudad">
+
+      <!-- Filtro por raza -->
+      <label>Raza:</label>
+      <select id="filtroRaza">
+        <option>Todas</option>
+        <option>Labrador</option>
+        <option>Husky</option>
+        <option>Chihuahua</option>
+        <option>Golden Retriever</option>
+      </select>
+
+      <!-- Filtro por tamaño -->
+      <label>Tamaño:</label>
+      <div class="checkboxes" id="filtroTamaño">
+        <label><input type="checkbox" value="Grande"> Grande</label>
+        <label><input type="checkbox" value="Mediano"> Mediano</label>
+        <label><input type="checkbox" value="Pequeño"> Pequeño</label>
+      </div>
+
+      <!-- Filtro por edad -->
+      <label>Edad:</label>
+      <div class="checkboxes" id="filtroEdad">
+        <label><input type="checkbox" value="Cachorro"> Cachorro</label>
+        <label><input type="checkbox" value="Joven"> Joven</label>
+        <label><input type="checkbox" value="Adulto"> Adulto</label>
+      </div>
+
+      <!-- Botón para aplicar filtros -->
+      <button class="btn-filtrar">Aplicar filtros</button>
+    </aside>
+
+    <!-- ======= SECCIÓN GALERÍA DE PERROS ======= -->
+    <section class="galeria">
+      <!-- Cada tarjeta representa un perro disponible en adopción -->
+      <!-- Los atributos data-* almacenan información útil para los filtros -->
+      
+      <div class="tarjeta" data-nombre="firulais" data-raza="labrador" data-tamaño="mediano" data-edad="joven" data-ciudad="guadalajara">
+        <img src="1.jpg" alt="Firulais">
+        <h4>Firulais</h4>
+        <a href="historial-perros.html?perro=firulais" class="btn-historial">Historial</a>
+      </div>
+
+      <div class="tarjeta" data-nombre="rocky" data-raza="husky" data-tamaño="grande" data-edad="adulto" data-ciudad="monterrey">
+        <img src="3.avif" alt="Rocky">
+        <h4>Rocky</h4>
+        <a href="historial-perros.html?perro=rocky" class="btn-historial">Historial</a>
+      </div>
+
+      <div class="tarjeta" data-nombre="max" data-raza="chihuahua" data-tamaño="pequeño" data-edad="joven" data-ciudad="cdmx">
+        <img src="5.jpg" alt="Max">
+        <h4>Max</h4>
+        <a href="historial-perros.html?perro=max" class="btn-historial">Historial</a>
+      </div>
+
+      <div class="tarjeta" data-nombre="toby" data-raza="golden retriever" data-tamaño="grande" data-edad="adulto" data-ciudad="guadalajara">
+        <img src="7.jpg" alt="Toby">
+        <h4>Toby</h4>
+        <a href="historial-perros.html?perro=toby" class="btn-historial">Historial</a>
+      </div>
+
+      <div class="tarjeta" data-nombre="lucky" data-raza="labrador" data-tamaño="mediano" data-edad="cachorro" data-ciudad="cdmx">
+        <img src="9.jpg" alt="Lucky">
+        <h4>Lucky</h4>
+        <a href="historial-perros.html?perro=lucky" class="btn-historial">Historial</a>
+      </div>
+
+      <div class="tarjeta" data-nombre="balu" data-raza="husky" data-tamaño="grande" data-edad="joven" data-ciudad="monterrey">
+        <img src="11.jpg" alt="Balu">
+        <h4>Balu</h4>
+        <a href="historial-perros.html?perro=balu" class="btn-historial">Historial</a>
+      </div>
+
+      <div class="tarjeta" data-nombre="bruno" data-raza="chihuahua" data-tamaño="pequeño" data-edad="adulto" data-ciudad="cdmx">
+        <img src="13.jpg" alt="Bruno">
+        <h4>Bruno</h4>
+        <a href="historial-perros.html?perro=bruno" class="btn-historial">Historial</a>
+      </div>
+
+      <div class="tarjeta" data-nombre="rex" data-raza="golden retriever" data-tamaño="grande" data-edad="joven" data-ciudad="guadalajara">
+        <img src="15.jpg" alt="Rex">
+        <h4>Rex</h4>
+        <a href="historial-perros.html?perro=rex" class="btn-historial">Historial</a>
+      </div>
+
+      <div class="tarjeta" data-nombre="simba" data-raza="labrador" data-tamaño="mediano" data-edad="adulto" data-ciudad="cdmx">
+        <img src="17.webp" alt="Simba">
+        <h4>Simba</h4>
+        <a href="historial-perros.html?perro=simba" class="btn-historial">Historial</a>
+      </div>
+
+      <div class="tarjeta" data-nombre="zeus" data-raza="husky" data-tamaño="grande" data-edad="cachorro" data-ciudad="monterrey">
+        <img src="19.jpg" alt="Zeus">
+        <h4>Zeus</h4>
+        <a href="historial-perros.html?perro=zeus" class="btn-historial">Historial</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= SCRIPT: FILTRADO DE TARJETAS ======= -->
+  <script>
+    // Selecciona el botón de filtros y todas las tarjetas de perros
+    const btnFiltrar = document.querySelector('.btn-filtrar');
+    const tarjetas = document.querySelectorAll('.tarjeta');
+
+    // Evento al hacer clic en "Aplicar filtros"
+    btnFiltrar.addEventListener('click', () => {
+      // Obtener valores de los filtros
+      const ciudadVal = document.getElementById('filtroCiudad').value.toLowerCase();
+      const razaVal = document.getElementById('filtroRaza').value.toLowerCase();
+
+      // Obtener los checkbox seleccionados de tamaño
+      const tamañoChecks = document.querySelectorAll('#filtroTamaño input:checked');
+      const tamañoVal = Array.from(tamañoChecks).map(c => c.value.toLowerCase());
+
+      // Obtener los checkbox seleccionados de edad
+      const edadChecks = document.querySelectorAll('#filtroEdad input:checked');
+      const edadVal = Array.from(edadChecks).map(c => c.value.toLowerCase());
+
+      // Recorrer todas las tarjetas para comparar con los filtros
+      tarjetas.forEach(tarjeta => {
+        // Obtener los valores de cada perro desde los atributos data-*
+        const ciudad = tarjeta.dataset.ciudad.toLowerCase();
+        const raza = tarjeta.dataset.raza.toLowerCase();
+        const tamaño = tarjeta.dataset.tamaño.toLowerCase();
+        const edad = tarjeta.dataset.edad.toLowerCase();
+
+        // Comparar cada campo con los filtros seleccionados
+        const ciudadMatch = ciudadVal === "" || ciudad.includes(ciudadVal);
+        const razaMatch = razaVal === "todas" || raza === razaVal;
+        const tamañoMatch = tamañoVal.length === 0 || tamañoVal.includes(tamaño);
+        const edadMatch = edadVal.length === 0 || edadVal.includes(edad);
+
+        // Mostrar u ocultar la tarjeta según los filtros coincidentes
+        tarjeta.style.display = (ciudadMatch && razaMatch && tamañoMatch && edadMatch) ? "block" : "none";
+      });
+    });
+  </script>
+  <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>Horarios</h3>
+      <p><strong>Lunes a Viernes:</strong> 10:00 AM – 7:00 PM</p>
+      <p><strong>Sábados:</strong> 11:30 AM – 5:30 PM</p>
+      <p><strong>Domingos:</strong> Cerrado</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Ubicación</h3>
+      <p>Plaza de la Constitución No. 3</p>
+      <p>Colonia Centro</p>
+      <p>C.P. 90000, Tlaxcala de Xicohténcatl</p>
+      <p>Tlaxcala, México</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Créditos</h3>
+      <p>&copy; 2025 MeowWoof</p>
+      <p>Desarrollado por <strong>Daniel Ahuatzi Magdaleno</strong> y <strong>Kimberly Dánica Sánchez Cabrera</strong>.</p>
+      <p>Todos los derechos reservados.</p>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>

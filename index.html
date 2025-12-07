@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portada - MeowWoof</title>
+  <link rel="stylesheet" href="portada.css">
+  <div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+</head>
+<body>
+
+  <!-- ===== MENÚ SUPERIOR ===== -->
+  <header class="menu-superior">
+    <div class="logo">
+      <img src="logomeow.jpg" alt="MeowWoof">
+      <h2>MeowWoof</h2>
+    </div>
+    <nav class="botones">
+      <a href="info.html" class="btn">Información</a>
+      <a href="MeowWoof.html" class="btn-acceder">Acceder</a>
+    </nav>
+  </header>
+
+  <!-- ===== CONTENEDOR PRINCIPAL ===== -->
+  <section class="portada">
+
+    <!-- Fondo con imágenes -->
+    <div class="galeria-fondo">
+      <img src="fondito.avif" class="foto active">
+      <img src="fondito2.jpeg" class="foto">
+      <img src="fondito3.webp" class="foto">
+    </div>
+
+    <!-- Capa oscura -->
+    <div class="overlay"></div>
+
+    <!-- CONTENIDO DE TEXTOS -->
+    <div class="texto-portada">
+      <h1 class="animar-titulo">Bienvenido a <span>MeowWoof</span></h1>
+
+      <p class="animar-parrafo descripcion">
+        Somos un <strong>centro de adopción de mascotas</strong> dedicado a brindar un hogar
+        seguro, lleno de amor y esperanza para perritos y gatitos que buscan una nueva oportunidad.
+      </p>
+
+      <div class="info-cajas">
+
+        <div class="caja animar-caja">
+          <h3>Centro de Adopción de Mascotas</h3>
+          <p>
+            Rescatamos, cuidamos y promovemos la adopción responsable de animales en situación vulnerable.
+          </p>
+        </div>
+
+        <div class="caja animar-caja">
+          <h3>Objetivo</h3>
+          <p>
+            Fomentar la empatía, el respeto y la adopción responsable mediante una plataforma confiable y cercana.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>&copy; 2025 MeowWoof | Desarrollado por <strong>Daniel Ahuatzi Magdaleno</strong> y <strong>Kimberly Dánica Sánchez Cabrera</strong>. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    let index = 0;
+    const imagenes = document.querySelectorAll(".foto");
+
+    setInterval(() => {
+      imagenes[index].classList.remove("active");
+      index = (index + 1) % imagenes.length;
+      imagenes[index].classList.add("active");
+    }, 5000);
+  </script>
+
+</body>
+</html>

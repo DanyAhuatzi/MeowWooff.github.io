@@ -1,0 +1,91 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #111;
+  background: linear-gradient(180deg, #dbe4f0 0%, #f3f7fc 40%, #e6ecf5 100%);
+  overflow-x: hidden;
+}
+
+
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 60px 30px;
+}
+
+.contenedor-texto {
+  max-width: 700px;
+  margin-bottom: 50px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  border: 2px solid #b3c6e0;
+}
+
+.contenedor-texto h2 {
+  font-family: 'Fredoka One', cursive;
+  color: #0d2b6b;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.contenedor-texto p {
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  gap: 0;
+}
+
+.galeria img {
+  width: 33.333%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  border: 2px solid #fff;
+}
+
+
+.galeria img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 🌐 Responsividad */
+@media (max-width: 1024px) {
+  .galeria img {
+    width: 50%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-texto h2 {
+    font-size: 2.2rem;
+  }
+  .contenedor-texto p {
+    font-size: 1.1rem;
+  }
+  .galeria img {
+    width: 100%;
+    height: 280px;
+  }
+}

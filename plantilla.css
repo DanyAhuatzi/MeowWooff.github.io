@@ -1,0 +1,116 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+
+/* ------------------------------------------------- */
+/* --------------------- NAVBAR -------------------- */
+/* ------------------------------------------------- */
+
+.navbar {
+  background-color: #3b5ea0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 40px;
+  height: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 700;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 40px;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #dcdcdc;
+}
+
+/* Botón regresar al inicio */
+.btn-regresar {
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+}
+
+.btn-regresar:hover {
+  border-bottom: 2px solid white;
+}
+
+/* ------------------------------------------------- */
+/* --------------------- FOOTER --------------------- */
+/* ------------------------------------------------- */
+
+.footer {
+  background-color: #3b5ea0;
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+  margin-top: 50px;
+}
+
+.footer-copy {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.footer-section h4 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #e3f2fd;
+}
+
+/* Responsivo para footer */
+@media (max-width: 700px) {
+  .nav-links a {
+    font-size: 1.2rem;
+    margin-left: 20px;
+  }
+
+  .footer-info {
+    gap: 25px;
+  }
+}
+
+/* ------------------------------------------------- */
+/* -------------------- CONTENIDO ------------------- */
+/* ------------------------------------------------- */
+main {
+  padding: 40px;
+  text-align: center;
+}
